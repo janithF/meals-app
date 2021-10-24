@@ -1,0 +1,121 @@
+@import '../../../index.scss';
+//CART
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .close-btn {
+      height: 2rem;
+    }
+    .close-btn:hover {
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+  }
+  
+  .backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+  }
+  
+  .cart-content {
+    
+    background-color: rgb(255, 255, 255);
+    width: 564px;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.644);
+    border-radius: 5px;
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $accent;
+      padding:0.6rem;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      color: white;
+      margin-bottom: 1rem;
+      margin: -16px -16px 1rem -16px;
+      h3 {
+        margin: 0;
+      }
+    }
+    .cart-item{
+      display: flex;
+      justify-content: space-between;
+      .food-info{
+        width:80%;
+      }
+      .info-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        p{
+          margin: 0;
+        }
+        #amount{
+          background-color: $secondary;
+          color: white;
+          padding: 0 0.5rem;
+          border-radius: 20px;
+          margin: 0;
+        }
+      }
+      .change-amount{
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: flex-start;
+        // background-color: burlywood;
+        .change{
+          width:2rem;
+          height: 3rem;
+          margin: 0;
+          cursor: pointer;
+          color: $primary;
+        }
+      }
+    }
+    .underline{
+      margin-top: 5px;
+      height:2px;
+      background-color: $primary;
+    }
+  }
+  
+  .cart-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+    h3{
+      margin: 0;
+    }
+  }
+  .btn-container{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+      border-radius: 20px;
+      padding: 0.5rem 2rem;
+      text-align: center;
+      border: 1px solid $accent;
+      width: 50%;
+    }
+    #cancel{
+      background-color: transparent;
+      margin-right: 2rem;
+    }
+    #order{
+      outline: none;
+      color: white;
+      background-color: $accent;
+    }
+  }

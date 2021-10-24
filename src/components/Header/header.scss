@@ -1,0 +1,74 @@
+@import "/src/index.scss";
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: $accent;
+  h2 {
+    font-family: $logo;
+    color: white;
+  }
+  .app-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 30px;
+    background-color: #480861;
+    .icon-container {
+      color: white;
+      display: flex;
+      .icon {
+        width: 2rem;
+        height: 2rem;
+      }
+      h3 {
+        margin: 0;
+        color: white;
+      }
+    }
+  }
+  .app-cart:hover{
+    cursor: pointer;
+  }
+  .cart-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0;
+  }
+}
+.sticky-top{
+  z-index: 10;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bump {
+  animation: bump 300ms ease-out;
+}

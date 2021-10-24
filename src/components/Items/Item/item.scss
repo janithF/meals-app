@@ -1,0 +1,61 @@
+@import '../../../index.scss';
+
+.item-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #340447, -1px -1px 2px rgba(0, 0, 0, 0.575);
+    margin-bottom: 1rem;
+    h2{
+        color:$accent;
+        font-family: $hero-title;
+    }
+    .about-food{
+        font-family:$hero;
+        font-style: italic;
+    }
+    #price{
+        font-size: 20px;
+        color: $primary;
+        font-weight: 800;
+        font-family: $hero-title;
+    }
+    .amount{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:120px;
+        h4{
+            font-size: 18px;
+            margin: 0;
+            font-family:$hero;
+            // margin-right: 20px;
+        }
+        #amount{
+            width: 3rem;
+            color: $primary;
+            border: none;
+            outline: none;
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        .add-btn{
+            outline: none;
+            border: none;
+            background-color: $accent;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            color: white;
+            margin-top: 12px; 
+            text-align: center;
+        }
+        .add-btn:hover{
+            background-color: #910c74;
+            transition: all 0.5s ease;
+        }
+    }
+}

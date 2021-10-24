@@ -1,0 +1,50 @@
+@import "/src/index.scss";
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .hero-content {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+  }
+  h2{
+      font-family: $hero-title;
+      font-size: 2.5rem;
+  }
+  .promo {
+    background-color: #a91640d8;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    width: auto;
+    padding: 0.5rem;
+  }
+  button {
+    background-color: $primary;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+@media screen and (max-width:890px) {
+    .hero{
+      img{
+        height: 500px;
+      }
+    }
+}
