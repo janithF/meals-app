@@ -8,28 +8,50 @@
     width: 100%;
     height: auto;
   }
-  .hero-content {
-    position: absolute;
-    top: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding:2rem;
-  }
-  h2{
-      font-family: $hero-title;
-      font-size: 2.5rem;
-  }
-  .promo {
-    background-color: #a91640d8;
-    border-radius: 50px;
+}
+.hero-content {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  h5 {
+    background-color: #3d393a81;
+    border-radius: 30px;
     text-align: center;
-    color: white;
-    width: auto;
+    font-family: $hero;
     padding: 0.5rem;
+    font-size: 2.5rem;
   }
-  button {
+}
+.carousel-caption,
+.carousel-indicators {
+  z-index: 2;
+}
+.promo {
+  background-color: #a91640d8;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  width: auto;
+  padding: 0.5rem;
+}
+.menu-btn-container {
+  display: block;
+  position: absolute;
+  left:44%;
+  z-index: 8;
+  top:70%;
+  .menu-btn{
+    cursor: pointer;
     background-color: $primary;
     padding: 0.5rem 2.5rem;
     font-size: 1.4rem;
@@ -38,13 +60,20 @@
     border: none;
     margin-top: 20px;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+
+  }
+  .menu-btn:hover{
+    transition: all ease-in 0.4s;
+    background-color: #7c0326;
   }
 }
-@media screen and (max-width:890px) {
-    .hero{
-      img{
-        height: 500px;
-      }
+
+
+@media screen and (max-width: 890px) {
+  .hero {
+    img {
+      height: 500px;
     }
+  }
 }

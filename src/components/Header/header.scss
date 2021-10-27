@@ -10,6 +10,11 @@ header {
   h2 {
     font-family: $logo;
     color: white;
+    cursor: pointer;
+    a,a:hover{
+      text-decoration: none;
+      color: inherit;
+    }
   }
   .app-cart {
     display: flex;

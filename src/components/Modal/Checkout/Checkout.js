@@ -113,7 +113,7 @@ const Checkout = () => {
 
                 </div>
                 <div className="btn-container">
-                    <button type="submit" id='order' className="btn btn-primary" disabled={!isFormValid}>Place Order</button>
+                    <button type="submit" id='place-order' className="btn btn-primary" disabled={!isFormValid}>Place Order</button>
                 </div>
             </form>
         </div>

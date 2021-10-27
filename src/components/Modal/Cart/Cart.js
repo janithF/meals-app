@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import AppContext from '../../../store/app-context';
 import { AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai';
 import './cart.scss'
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
 
@@ -85,8 +86,8 @@ const Cart = (props) => {
                         <h4>${totalAmount.toFixed(2)}</h4>
                     </div>
                     <div className="btn-container">
-                        <button id="cancel" onClick={clearCart}>Cancel</button>
-                        <button id="order" onClick={props.goToCheckout}>Go to Checkout</button>
+                        <Link to='/home/menu'><button id="cancel" onClick={clearCart}>Cancel</button></Link>
+                        <Link to='/home/checkout'><button id="checkout" onClick={props.goToCheckout}>Go to Checkout</button></Link>
                     </div>
                 </>
             }

@@ -8,6 +8,10 @@ const Items = () => {
 
     const { appData, getData, isLoading, error } = useContext(AppContext);
 
+    useEffect(()=>{
+        window.scroll(0,500);
+    },[])
+
     useEffect(() => {
         getData()
     }, [getData])
@@ -28,7 +32,7 @@ const Items = () => {
                 <h2>Our Menu</h2>
                 <hr />
             </div>
-            <div className='item-container'>
+            <div className='item-container' id="menu">
                 {content}
             </div>
         </>

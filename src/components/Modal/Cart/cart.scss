@@ -13,14 +13,6 @@
     }
   }
   
-  .backdrop {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.74);
-    width: 100%;
-    height: 100%;
-    z-index: 30;
-  }
-  
   .cart-content {
     
     background-color: rgb(255, 255, 255);
@@ -107,15 +99,28 @@
       padding: 0.5rem 2rem;
       text-align: center;
       border: 1px solid $accent;
-      width: 50%;
+      font-size: 1rem;
+    }
+    a{
+      width:50%;
     }
     #cancel{
       background-color: transparent;
       margin-right: 2rem;
+      color: black;
+      width: 90%;
     }
-    #order{
+    #checkout{
       outline: none;
       color: white;
       background-color: $accent;
+      width: 90%;
+    }
+    #place-order{
+      outline: none;
+      color: white;
+      background-color: $accent;
+      width: 60%;
     }
   }
+ 
